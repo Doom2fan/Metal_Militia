@@ -1,0 +1,3 @@
+DECORATE: Chronos "phantombeta" Ouroboros
+Sprites: osjclatchford, Chronos "phantombeta" Ouroboros
+Sounds: kannoe, NightmareMutant (both from GAMEBANANA)

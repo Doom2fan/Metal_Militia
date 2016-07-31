@@ -1,0 +1,3 @@
+DECORATE: Chronos "phantombeta" Ouroboros
+Sprites: Midway Entertainment, Uboa/Zedek the Plague Doctor
+Sounds: 

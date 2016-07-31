@@ -1,0 +1,113 @@
+// By Jekyll Grim Payne/zer0, edited by Chronos "phantombeta" Ouroboros
+actor DME_WhiteSmoke {
+    +noInteraction +forceXYBillboard
+    renderStyle add
+    alpha 0.3
+    scale 0.1
+    states {
+    Spawn:
+        SMOK ABCDEFGHIJKLMNOPQ 1
+        stop
+    }
+}
+
+actor DME_BlackSmoke : DME_WhiteSmoke {
+    renderStyle translucent
+    alpha 0.15
+    states {
+    Spawn:
+        SMOK ABCDEFGHIJKLMNOPQ 1
+        stop
+    }
+}
+
+actor DME_ShotSmoke {
+    +noInteraction +forceXYBillboard
+    vSpeed 2
+    renderStyle add
+    alpha 0.3
+    scale 0.1
+    states {
+    Spawn:
+        TNT1 A 0
+        SMOK ABCDEFGHIJKLMNOPQ 1 A_SpawnItem ("DME_ShotSmokeTrail")
+        stop
+    }
+}
+
+actor DME_ShotSmokeTrail : DME_ShotSmoke {
+    vSpeed 0
+    alpha 0.15
+    states {
+    Spawn:
+        SMOK CDEFGHIJKLMNOPQ 1
+        stop
+    }
+}
+
+actor DME_BlackShotSmoke : DME_ShotSmoke {
+    renderStyle translucent
+    alpha 0.15
+    states {
+    Spawn:
+        TNT1 A 0
+        SMOK ABCDEFGHIJKLMNOPQ 1 A_SpawnItem ("DME_BlackShotSmokeTrail")
+        stop
+    }
+}
+
+actor DME_BlackShotSmokeTrail : DME_ShotSmokeTrail {
+    renderStyle translucent
+    alpha 0.08
+}
+
+actor DME_SmokingPiece : DME_DebrisGeneral { // Edited by Chronos "phantombeta" Ouroboros
+    -noGravity
+    speed 12
+    gravity 0.7
+    states {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf (waterLevel >= 1, "Water")
+        TNT1 A 1
+        TNT1 A 1 A_SpawnItem ("DME_SmokingPieceSmoke")
+        loop
+    Water:
+        TNT1 A 0
+        stop
+    }
+}
+
+actor DME_SmokingPieceSmoke : DME_ShotSmokeTrail {
+    scale 0.06
+    alpha 0.5
+}
+
+actor DME_ShotSmoke_2_Spawner { // By wildweasel, edited by Chronos "phantombeta" Ouroboros
+    radius 1
+    height 1
+    speed 10
+    Projectile
+    states {
+    Spawn:
+        TNT1 A 1
+        TNT1 A 0 A_Die
+        goto Death
+    Death:
+        TNT1 A 0 A_CustomMissile ("DME_ShotSmoke_2", -2, 0, 0)
+        stop
+    }
+}
+
+// DECORATE by Chronos "phantombeta" Ouroboros. I dunno who made the sprites.
+actor DME_ShotSmoke_2 {
+    +noInteraction +forceXYBillboard
+    renderStyle add
+    alpha 0.3
+    scale 0.1
+    states {
+    Spawn:
+        SMKS ABCDEFGHIJKLMNOPQRSTUVW 1
+        stop
+    }
+}

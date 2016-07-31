@@ -1,0 +1,29 @@
+actor DME_9mmCartridges : ammo replaces Clip {
+    tag "$9MMCARTRIDGES"
+    inventory.PickupMessage "$PICKUP_9MM"
+    inventory.Amount 15
+    inventory.MaxAmount 300
+    ammo.BackpackMaxAmount 600
+    inventory.Icon "CLIPA0"
+    inventory.PickupSound "misc/ammopickup"
+    states {
+    Spawn:
+        CLIP A -1
+        stop
+    }
+}
+
+actor DME_Shells : ammo replaces Shell {
+    tag "$SHELLS"
+    inventory.PickupMessage "$PICKUP_SHELLS"
+    inventory.Amount 4
+    inventory.MaxAmount 60
+    ammo.BackpackMaxAmount 120
+    inventory.Icon "SHELA0"
+    inventory.PickupSound "misc/ammopickup"
+    states {
+    Spawn:
+        SHEL A -1
+        stop
+    }
+}

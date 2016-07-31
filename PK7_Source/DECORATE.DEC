@@ -1,0 +1,45 @@
+/* Info
+** You can use anything from here. Just make sure to credit the author(s).
+**
+** Credits for the DECORATE codes are in the file or in the CREDITS file
+** contained in the same folder as the DECORATE.DEC file.
+**
+** Credits for the sound files are in the SNDINFO files.
+** Credits for a lot of shit is in the Credits folder.
+** Credits for the final muzzle flashes goes to me, Chronos "phantombeta" Ouroboros.
+**
+** Credits for the sprites is in the CREDITS.txt files contained in the
+** same folder as the DECORATE code for the actor. Sprites used in multi-
+** ple actors should be in Credits/Sprites.TXT.
+*/
+
+/* Some random units:
+** 32 XY mapunits = 1 meter
+** 38.4 Z mapunits = 1 meter
+*/
+
+#INCLUDE "Decorate/Defaults.DEC"
+
+// Effects
+#INCLUDE "Decorate/Effects/Smoke.DEC"
+#INCLUDE "Decorate/Effects/Casings.DEC"
+#INCLUDE "Decorate/Effects/Blood.DEC"
+
+// Common stuff
+#INCLUDE "Decorate/Bullets.DEC"
+
+// Monsters
+
+// Inventory
+
+// Player stuff
+#INCLUDE "Decorate/Player.DEC"
+
+// Ammo
+#INCLUDE "Decorate/Inventory/Ammo.DEC"
+
+// Weapons
+#INCLUDE "Decorate/Base Weapon.DEC"
+#INCLUDE "Decorate/Weapons/Pistol/DECORATE.DEC"
+#INCLUDE "Decorate/Weapons/Shotgun/DECORATE.DEC"
+#INCLUDE "Decorate/Weapons/Super Shotgun/DECORATE.DEC"
