@@ -1,0 +1,35 @@
+sprite KICKA0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK1.png", 205, 141
+}
+
+sprite KICKB0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK1.png", 199, 137
+}
+
+sprite KICKC0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK1.png", 194, 132
+}
+
+sprite KICKD0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK2.png", 164, 118
+}
+
+sprite KICKE0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK2.png", 159, 111
+}
+
+sprite KICKF0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK3.png", 155, 113
+}
+
+sprite KICKG0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK3.png", 146, 110
+}
+
+sprite KICKH0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK4.png", 137, 41
+}
+
+sprite KICKI0, 320, 200 {
+    patch "graphics/Weapons/Kick/KICK4.png", 139, 50
+}

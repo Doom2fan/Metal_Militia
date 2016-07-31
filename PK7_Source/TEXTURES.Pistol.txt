@@ -1,0 +1,117 @@
+sprite PISTA0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame1.png", 137, 96
+}
+
+sprite PISTB0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame1.png", 137, 96
+    patch "graphics/Weapons/Pistol/Part1.png", 156, 116
+}
+
+sprite PISTC0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame2.png", 137, 96
+}
+
+sprite PISTD0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame2.png", 137, 99
+}
+
+sprite PISTE0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame3.png", 135, 96
+}
+
+sprite PSTRA0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame1.png", 145, 96
+}
+
+sprite PSTRB0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame4.png", 162, 105
+}
+
+sprite PSTRC0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame4.png", 170, 105
+}
+
+sprite PSTRD0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRE0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part2.png", 181, 121
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRF0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part2.png", 175, 137
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRG0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part2.png", 170, 153
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRH0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part2.png", 166, 163
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRI0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRJ0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part3.png", 139, 163
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRK0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part3.png", 147, 145
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRL0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part3.png", 152, 130
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRM0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Part3.png", 154, 124
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+}
+
+sprite PSTRN0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+    patch "graphics/Weapons/Hands/HAND-001.png", 160, 145
+}
+
+sprite PSTRO0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+    patch "graphics/Weapons/Hands/HAND-001.png", 154, 150
+}
+
+sprite PSTRP0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+    patch "graphics/Weapons/Hands/HAND-002.png", 139, 142
+}
+
+sprite PSTRQ0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+    patch "graphics/Weapons/Hands/HAND-002.png", 133, 153
+}
+
+sprite PSTRR0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame5.png", 172, 87
+    patch "graphics/Weapons/Hands/HAND-002.png", 124, 163
+}
+
+sprite PSTSA0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame1.png", 153, 104
+}
+
+sprite PSTSB0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame1.png", 180, 117
+}
+
+sprite PSTSC0, 320, 200 {
+    patch "graphics/Weapons/Pistol/Frame1.png", 200, 139
+}
