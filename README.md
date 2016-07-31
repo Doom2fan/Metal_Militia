@@ -1,0 +1,1 @@
+Requires GZDoom or Zandronum 3.x
