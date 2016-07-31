@@ -1,0 +1,3 @@
+// MAPINFO for Vicious Doom
+INCLUDE Mapinfo/Gameinfo.txt
+INCLUDE Mapinfo/Skills.txt

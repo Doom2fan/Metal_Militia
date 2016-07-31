@@ -1,0 +1,30 @@
+/*model DME_Blood {
+   path "Models\Blood\"
+   model 0 "Blood.md3"
+   skin 0 "Decal.png"
+   scale 1.0 1.0 1.0
+
+   // frameIndex <XXXX> <X> <model index> <frame index>
+}*/
+
+model DME_BaseTracer {
+   path "Models/Tracer/"
+   model 0 "tracer.md3"
+   skin 0 "tracer1.tga"
+   scale 1.0 1.0 1.0
+
+   pitchFromMomentum
+
+   frameIndex SPRK A 0 0
+}
+
+/*model DME_BaseTracerPlayer {
+   path "Models/Tracer/"
+   model 0 "tracer.md3"
+   skin 0 "tracer1.tga"
+   scale 1.0 1.0 1.0
+
+   pitchFromMomentum
+
+   frameIndex SPRK A 0 0
+}*/
