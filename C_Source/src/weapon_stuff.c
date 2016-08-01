@@ -1,5 +1,5 @@
 /*
-**  Vicious Doom - A GZDoom mod
+**  Metal Militia - A GZDoom mod
 **  Copyright (C) 2015  Chronos Ouroboros
 **
 **  This program is free software; you can redistribute it and/or modify
@@ -71,35 +71,35 @@ void DisableWeapon (string meh, string blah) {
 
 // Scripts
 // SynthFire stuff
-Script_C void DME_SynthFire () {
+Script_C void MM_SynthFire () {
     while (TRUE) {
-        if (!CheckInventory (s"DME_SynthFireActive"))
+        if (!CheckInventory (s"MM_SynthFireActive"))
             return;
         
-        if (KeyDown (BT_ATTACK) && !CheckInventory (s"DME_SynthFireLeft"))
-            GiveInventory (s"DME_SynthFireLeft", 1);
+        if (KeyDown (BT_ATTACK) && !CheckInventory (s"MM_SynthFireLeft"))
+            GiveInventory (s"MM_SynthFireLeft", 1);
         
-        if (KeyDown (BT_ALTATTACK) && !CheckInventory (s"DME_SynthFireRight"))
-            GiveInventory (s"DME_SynthFireRight", 1);
+        if (KeyDown (BT_ALTATTACK) && !CheckInventory (s"MM_SynthFireRight"))
+            GiveInventory (s"MM_SynthFireRight", 1);
         
         Delay (1);
         
-        if (KeyUp (BT_ATTACK) && CheckInventory (s"DME_SynthFireLeft"))
-            TakeInventory (s"DME_SynthFireLeft", 1);
+        if (KeyUp (BT_ATTACK) && CheckInventory (s"MM_SynthFireLeft"))
+            TakeInventory (s"MM_SynthFireLeft", 1);
         
-        if (KeyUp (BT_ALTATTACK) && CheckInventory (s"DME_SynthFireRight"))
-            TakeInventory (s"DME_SynthFireRight", 1);
+        if (KeyUp (BT_ALTATTACK) && CheckInventory (s"MM_SynthFireRight"))
+            TakeInventory (s"MM_SynthFireRight", 1);
     }
 }
 
-Script_C int DME_SynthFireAllowChange () {
-    if (!CheckInventory (s"DME_SynthFireRightReloading") || CheckInventory (s"DME_SynthFireLeftReloading"))
+Script_C int MM_SynthFireAllowChange () {
+    if (!CheckInventory (s"MM_SynthFireRightReloading") || CheckInventory (s"MM_SynthFireLeftReloading"))
         return 1;
     else
         return 0;
 }
 
-Script_C void DME_RecoilPitch (accum offset) { // Called like this in code: TNT1 A 0 ACS_NamedExecuteAlways ("DME_RecoilPitch", 0, 0.5 * 65535)
+Script_C void MM_RecoilPitch (accum offset) { // Called like this in code: TNT1 A 0 ACS_NamedExecuteAlways ("MM_RecoilPitch", 0, 0.5 * 65535)
     accum oldPitch = GetActorPitch (0);
     accum scaledOffset = ScaleValueAccum (offset, -90.0k, 90.0k, -0.25k, 0.25k);
     accum newPitch = ClampAccum (oldPitch - scaledOffset, -0.25k, 0.25k);
@@ -107,7 +107,7 @@ Script_C void DME_RecoilPitch (accum offset) { // Called like this in code: TNT1
     SetActorPitch (0, newPitch);
 }
 
-/*Script_C void DME_SpawnTracer () {
+/*Script_C void MM_SpawnTracer () {
     vec3d puff;
     vec3d shooter;
     vec3d diff;
@@ -137,7 +137,7 @@ Script_C void DME_RecoilPitch (accum offset) { // Called like this in code: TNT1
 
     angle = FixedSqrt (diff.x * diff.x + diff.y * diff.y);
 
-    Spawn (s"DME_BaseTracer", shooter.x, shooter.y, shooter.z, tracerTID, (int) (angle >> 2))
+    Spawn (s"MM_BaseTracer", shooter.x, shooter.y, shooter.z, tracerTID, (int) (angle >> 2))
 
     SetActivator (tracerTID);
     SetPointer (AAPTR_TARGET, shooterTempTID);
@@ -150,5 +150,5 @@ Script_C void DME_RecoilPitch (accum offset) { // Called like this in code: TNT1
     vec3d vec ()
 
     ResizeV3D (GetActorProperty (0, APROP_Speed), )
-    //SpawnProjectile (0, s"DME_BaseTracer", (int) (angle >> 2), 0, vspeed, 0, 0);
+    //SpawnProjectile (0, s"MM_BaseTracer", (int) (angle >> 2), 0, vspeed, 0, 0);
 }*/

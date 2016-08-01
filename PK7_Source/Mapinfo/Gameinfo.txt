@@ -12,5 +12,5 @@ gameinfo {
     gibFactor = 0.5
     dimcolor = "00 33 CC"
     dimamount = 0.2
-    playerClasses = "DME_Player"
+    playerClasses = "MM_Player"
 }

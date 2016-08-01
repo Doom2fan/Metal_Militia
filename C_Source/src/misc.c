@@ -1,5 +1,5 @@
 /*
-**  Vicious Doom - A GZDoom mod
+**  Metal Militia - A GZDoom mod
 **  Copyright (C) 2015  Chronos Ouroboros
 **
 **  This program is free software; you can redistribute it and/or modify
@@ -20,7 +20,7 @@
 #include "includes.h"
 #include "misc.h"
 
-Script_C void DME_SpeedScript ENTER () {
+Script_C void MM_SpeedScript ENTER () {
     // Not needed or desired in TitleMaps.
     if (GameType () == GAME_TITLE_MAP)
         return;
@@ -31,44 +31,44 @@ Script_C void DME_SpeedScript ENTER () {
         health = GetActorProperty (0, APROP_Health);
         
         if (health <= 20)
-            GiveInventory (s"DME_Dying", 9999999);
+            GiveInventory (s"MM_Dying", 9999999);
         else
-            TakeInventory (s"DME_Dying", 9999999);
+            TakeInventory (s"MM_Dying", 9999999);
         
         Delay(1);
     }
 }
 
-Script_C void DME_WaterScript ENTER () {
+Script_C void MM_WaterScript ENTER () {
     // Not needed or desired in TitleMaps.
     if (GameType () == GAME_TITLE_MAP)
         return;
     
     while (true) {
         if (GetActorProperty(0, APROP_Waterlevel) > 2) // if underwater...
-            GiveInventory (s"DME_IsUnderwater", 1); // give DME_IsUnderwater
+            GiveInventory (s"MM_IsUnderwater", 1); // give MM_IsUnderwater
 
         else if (GetActorProperty(0, APROP_Waterlevel) <= 2) // if not underwater
-            TakeInventory (s"DME_IsUnderwater", 1); // take DME_IsUnderwater
+            TakeInventory (s"MM_IsUnderwater", 1); // take MM_IsUnderwater
         
         Delay (1);
     }
 }
 
-Script_C void DME_Keys ENTER () {
+Script_C void MM_Keys ENTER () {
     // Not needed or desired in TitleMaps.
     if (GameType () == GAME_TITLE_MAP)
         return;
     
     while (true) {
         if (KeyPressed (BT_RELOAD))
-            UseInventory (s"DME_ReloadKey");
+            UseInventory (s"MM_ReloadKey");
         
         Delay (1);
     }
 }
 
-/*Script_C void DME_SetProjectilePitch () {
+/*Script_C void MM_SetProjectilePitch () {
     accum x = GetActorVelX (0); accum y = GetActorVelY (0); accum z = GetActorVelZ (0);
     accum angle = GetActorAngle (0);
     accum pitch = 0;
@@ -95,7 +95,7 @@ Script_C void AAAA () {
 }*/
 
 #ifdef DEBUG
-Script_C void DME_DebugVelocity () {
+Script_C void MM_DebugVelocity () {
     accum x = 0, y = 0, z = 0,
         angle = 0, speed = 0;
     while (true) {
@@ -109,7 +109,7 @@ Script_C void DME_DebugVelocity () {
     }
 }
 
-Script_C void DME_DebugVelocityInKmH () {
+Script_C void MM_DebugVelocityInKmH () {
     accum x = 0, y = 0, z = 0,
         speed = 0, speed2;
     while (true) {

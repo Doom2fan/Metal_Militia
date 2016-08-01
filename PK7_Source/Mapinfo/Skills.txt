@@ -1,5 +1,5 @@
 clearSkills
-skill DME_Baby {
+skill MM_Baby {
     easyBossBrain
     ammoFactor = 2
     damageFactor = 0.5
@@ -9,7 +9,7 @@ skill DME_Baby {
     key = "I"
 }
 
-skill DME_Easy {
+skill MM_Easy {
     easyBossBrain
     spawnFilter = Easy
     name = "$SKILLS_EASY"
@@ -17,14 +17,14 @@ skill DME_Easy {
     key = "G"
 }
 
-skill DME_Normal {
+skill MM_Normal {
     spawnFilter = Normal
     name = "$SKILLS_NORMAL"
     mustConfirm = "$SKILLS_NORMALTEXT"
     key = "B"
 }
 
-skill DME_Hard {
+skill MM_Hard {
     spawnFilter = Hard
     name = "$SKILLS_HARD"
     mustConfirm = "$SKILLS_HARDTEXT"
@@ -32,7 +32,7 @@ skill DME_Hard {
     key = "H"
 }
 
-skill DME_Harder {
+skill MM_Harder {
     spawnFilter = Hard
     name = "$SKILLS_HARDER"
     mustConfirm = "$SKILLS_HARDERTEXT"
@@ -40,7 +40,7 @@ skill DME_Harder {
     key = "I"
 }
 
-skill DME_VeryHard {
+skill MM_VeryHard {
     fastMonsters
     spawnFilter = Hard
     name = "$SKILLS_HARDSPEED"
@@ -48,7 +48,7 @@ skill DME_VeryHard {
     key = "R"
 }
 
-skill DME_Nightmare {
+skill MM_Nightmare {
     fastMonsters
     ammoFactor = 2
     respawnTime = 12
@@ -58,7 +58,7 @@ skill DME_Nightmare {
     key = "E"
 }
 
-skill DME_Brutal {
+skill MM_Brutal {
     fastMonsters
     ammoFactor = 2.0
     respawnTime = 5
@@ -71,7 +71,7 @@ skill DME_Brutal {
     key = "S"
 }
 
-Skill DME_IAmGod {
+Skill MM_IAmGod {
     fastMonsters
     ammoFactor = 0.5
     doubleAmmoFactor = 0.5
@@ -84,7 +84,7 @@ Skill DME_IAmGod {
     replaceActor = "ShotgunGuy", "DoomImp"
 }
 
-Skill DME_AAAAAAAAAAA {
+Skill MM_AAAAAAAAAAA {
     autoUseHealth
     ammoFactor = 16
     doubleAmmoFactor = 32

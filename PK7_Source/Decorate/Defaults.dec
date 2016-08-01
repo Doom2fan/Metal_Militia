@@ -10,7 +10,7 @@ actor Counter : inventory {
 }
 
 // By Chronos "phantombeta" Ouroboros
-actor DME_ActionRunnerBase : CustomInventory {
+actor MM_ActionRunnerBase : CustomInventory {
     inventory.MaxAmount 1
     +inventory.AutoActivate +inventory.Quiet
     states {
@@ -21,7 +21,7 @@ actor DME_ActionRunnerBase : CustomInventory {
 }
 
 // By Jekyll Grim Payne "Aka" zer0
-actor DME_DebrisGeneral {
+actor MM_DebrisGeneral {
     radius 1
     height 1
     mass 1

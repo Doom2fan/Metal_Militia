@@ -1,4 +1,4 @@
-/*model DME_Blood {
+/*model MM_Blood {
    path "Models\Blood\"
    model 0 "Blood.md3"
    skin 0 "Decal.png"
@@ -7,7 +7,7 @@
    // frameIndex <XXXX> <X> <model index> <frame index>
 }*/
 
-model DME_BaseTracer {
+model MM_BaseTracer {
    path "Models/Tracer/"
    model 0 "tracer.md3"
    skin 0 "tracer1.tga"
@@ -18,7 +18,7 @@ model DME_BaseTracer {
    frameIndex SPRK A 0 0
 }
 
-/*model DME_BaseTracerPlayer {
+/*model MM_BaseTracerPlayer {
    path "Models/Tracer/"
    model 0 "tracer.md3"
    skin 0 "tracer1.tga"

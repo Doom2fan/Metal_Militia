@@ -1,8 +1,8 @@
 // By Chronos "phantombeta" Ouroboros
-actor DME_IsUnderwater : boolean { }
-actor DME_Dying : boolean { }
+actor MM_IsUnderwater : boolean { }
+actor MM_Dying : boolean { }
 
-actor DME_Player : playerPawn {
+actor MM_Player : playerPawn {
     // Damage
     gibHealth -50
     painChance 255
@@ -13,16 +13,16 @@ actor DME_Player : playerPawn {
     player.JumpZ 9.797
     
     // Give Items/Weapons/Ammo
-    player.StartItem DME_Pistol
-    player.StartItem DME_9mmCartridges, 65
-    player.StartItem DME_MeleeKey
+    player.StartItem MM_Pistol
+    player.StartItem MM_9mmCartridges, 65
+    player.StartItem MM_MeleeKey
     
     // Class stuff
     player.DisplayName "Marine"
     
     // Weapon Slots
-    player.WeaponSlot 2, DME_Pistol
-    player.WeaponSlot 3, DME_Shotgun, DME_SuperShotgun
+    player.WeaponSlot 2, MM_Pistol
+    player.WeaponSlot 3, MM_Shotgun, MM_SuperShotgun
     
     // Misc
     radius 16
@@ -89,7 +89,7 @@ actor DME_Player : playerPawn {
 }
 
 // Null Weapon
-actor DME_NullWeapon : weapon {
+actor MM_NullWeapon : weapon {
     tag "Unarmed"
     +inventory.Undroppable +weapon.Wimpy_Weapon +weapon.CheatNotWeapon +noInteraction
     +weapon.NoAlert
@@ -116,14 +116,14 @@ actor DME_NullWeapon : weapon {
 }
 
 // Kicking
-actor DME_DoMelee : boolean { }
-actor DME_MeleeKey : customInventory {
+actor MM_DoMelee : boolean { }
+actor MM_MeleeKey : customInventory {
     inventory.Amount 1
     inventory.MaxAmount 1
     +inventory.Undroppable -inventory.InvBar
     states {
     Use:
-        TNT1 A 0 A_GiveInventory ("DME_DoMelee", 1)
+        TNT1 A 0 A_GiveInventory ("MM_DoMelee", 1)
         fail
     }
 }

@@ -13,7 +13,7 @@ LIBDIR = $(OBJDIR)/lib
 
 ACSDIR = PK7_Source/acs
 
-all: $(OBJDIR) $(ACSDIR) $(ACSDIR)/DMASTEXP.bin
+all: $(OBJDIR) $(ACSDIR) $(ACSDIR)/METLMILT.bin
 
 cleanall:
 	rm -rf $(OBJDIR) $(ACSDIR)
@@ -38,7 +38,7 @@ $(LIBDIR)/libGDCC.ir:
 
 ## ===========================================
 ##
-## DMASTEXP.bin
+## METLMILT.bin
 ##
 ## ===========================================
 SRC = $(wildcard $(SRCDIR)/*.c)
@@ -47,5 +47,5 @@ OBJ = $(SRC:$(SRCDIR)/%.c=$(OBJDIR)/%.ir)
 $(OBJDIR)/%.ir: $(SRCDIR)/%.c
 	$(CC) $(CC_FLAGS) -i$(INCDIR) -i$(SRCDIR) -c $< -o $@
 
-$(ACSDIR)/DMASTEXP.bin: $(LIBDIR)/libc.ir $(LIBDIR)/libGDCC.ir $(OBJ)
+$(ACSDIR)/METLMILT.bin: $(LIBDIR)/libc.ir $(LIBDIR)/libGDCC.ir $(OBJ)
 	$(LD) $(COM_FLAGS) $^ -o $@

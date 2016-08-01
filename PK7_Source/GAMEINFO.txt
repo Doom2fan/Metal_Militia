@@ -1,2 +1,2 @@
-startupTitle = "D: Master Exploder"
+startupTitle = "Metal Militia"
 startupColors = "FFFFFF", "A00000"

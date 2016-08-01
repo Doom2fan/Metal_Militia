@@ -1,13 +1,13 @@
 // Based on Zombie Torrent's casings code (I don't know who made the code for those casings)
 // Casing sprites by CaptainJ. Edited by Chronos "phantombeta" Ouroboros
 
-actor DME_CasingSpawnerBase {
+actor MM_CasingSpawnerBase {
     speed 20
     projectile
     +noClip +clientsideOnly
 }
 
-actor DME_CasingBase {
+actor MM_CasingBase {
     height 2
     radius 2
     speed 6
@@ -31,21 +31,21 @@ actor DME_CasingBase {
 // Shotgun Shell
 //
 //-------------------------------------------------------------------------------------------
-actor DME_ShellCasingSpawn : DME_CasingSpawnerBase {
+actor MM_ShellCasingSpawn : MM_CasingSpawnerBase {
     states {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_CustomMissile ("DME_ShellCasing", 0, 0, random [sfx] (80, 100), 2, random [sfx] (-40, -60))
+        TNT1 A 0 A_CustomMissile ("MM_ShellCasing", 0, 0, random [sfx] (80, 100), 2, random [sfx] (-40, -60))
         stop
     }
 }
 
-actor DME_ShellCasing : DME_CasingBase {
+actor MM_ShellCasing : MM_CasingBase {
     seeSound "Weapons/shell"
     scale .2
     states {
     Spawn:
-        CAS0 ABCDEFGH 2 // A_SpawnItem ("DME_ShotSmokeTrail")
+        CAS0 ABCDEFGH 2 // A_SpawnItem ("MM_ShotSmokeTrail")
         loop
     Death:
         TNT1 A 0 A_Jump (256, "Rest1", "Rest2", "Rest3", "Rest4", "Rest5", "Rest6", "Rest7", "Rest8")
@@ -90,22 +90,22 @@ actor DME_ShellCasing : DME_CasingBase {
 // 9mm Casing
 //
 //-------------------------------------------------------------------------------------------
-actor DME_9mmCasingSpawn : DME_CasingSpawnerBase {
+actor MM_9mmCasingSpawn : MM_CasingSpawnerBase {
     states {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_CustomMissile ("DME_9mmCasing", -5, 0, random [sfx] (-80, -100), 2, random [sfx] (45, 80))
+        TNT1 A 0 A_CustomMissile ("MM_9mmCasing", -5, 0, random [sfx] (-80, -100), 2, random [sfx] (45, 80))
         stop
     }
 }
 
-actor DME_9mmCasing : DME_CasingBase {
+actor MM_9mmCasing : MM_CasingBase {
     scale .2
     seeSound "Weapons/casing"
     states {
     Spawn:
         TNT1 A 0
-        CAS1 ABCDEFGH 2 A_SpawnItem ("DME_ShotSmokeTrail")
+        CAS1 ABCDEFGH 2 A_SpawnItem ("MM_ShotSmokeTrail")
         loop
     Death:
         TNT1 A 0 A_Jump (256, "Rest1", "Rest2", "Rest3", "Rest4", "Rest5", "Rest6", "Rest7", "Rest8")
@@ -150,22 +150,22 @@ actor DME_9mmCasing : DME_CasingBase {
 // Rifle Casing
 //
 //-------------------------------------------------------------------------------------------
-actor DME_RifleCasingSpawn : DME_CasingSpawnerBase {
+actor MM_RifleCasingSpawn : MM_CasingSpawnerBase {
     states {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_CustomMissile ("DME_RifleCasing", -5, 0, random [sfx] (-80, -100), 2, random [sfx] (45, 80))
+        TNT1 A 0 A_CustomMissile ("MM_RifleCasing", -5, 0, random [sfx] (-80, -100), 2, random [sfx] (45, 80))
         stop
     }
 }
 
-actor DME_RifleCasing : DME_CasingBase {
+actor MM_RifleCasing : MM_CasingBase {
     scale .2
     seeSound "Weapons/casing"
     states {
     Spawn:
         TNT1 A 0
-        CAS3 ABCDEF 2 A_SpawnItem ("DME_ShotSmokeTrail")
+        CAS3 ABCDEF 2 A_SpawnItem ("MM_ShotSmokeTrail")
         loop
     Death:
         TNT1 A 0 A_Jump (256, "Rest1", "Rest2", "Rest3", "Rest4", "Rest5", "Rest6")
