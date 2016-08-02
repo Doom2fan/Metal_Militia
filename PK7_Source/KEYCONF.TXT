@@ -1,0 +1,9 @@
+// Aliases
+alias MM_MeleeAttack "use MM_MeleeKey"
+
+// Binds
+defaultBind Q +MM_MeleeAttack
+
+// Keys
+addKeySection "Metal Militia" MetalMilitiaKeys
+addMenuKey "Melee attack" +MM_MeleeAttack
