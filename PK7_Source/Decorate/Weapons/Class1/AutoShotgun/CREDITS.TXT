@@ -1,0 +1,7 @@
+DECORATE: Chronos "phantombeta" Ouroboros.
+
+Sprites:
+    HUD and pickup sprites: Globe, Eriance, Bethesda Software, Eurocorp, Midway Entertainment, Mike12, Captain J and Chronos "phantombeta" Ouroboros.
+    Animation: Chronos "phantombeta" Ouroboros.
+
+Sounds: Credits in the SNDINFO file.

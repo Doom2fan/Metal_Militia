@@ -1,5 +1,5 @@
 gameinfo {
-    titleMusic = "music/TITLEMAP.spc"
+    //titleMusic = "music/TITLEMAP.spc"
     titlePage = "TITLEPIC"
     creditPage = "CREDIT"
     titleTime = 8
@@ -12,5 +12,5 @@ gameinfo {
     gibFactor = 0.5
     dimcolor = "00 33 CC"
     dimamount = 0.2
-    playerClasses = "MM_Player"
+    playerClasses = "MM_Class1"
 }

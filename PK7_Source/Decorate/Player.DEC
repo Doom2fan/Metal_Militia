@@ -2,7 +2,7 @@
 actor MM_IsUnderwater : boolean { }
 actor MM_Dying : boolean { }
 
-actor MM_Player : playerPawn {
+actor MM_BasePlayer : playerPawn {
     // Damage
     gibHealth -50
     painChance 255
@@ -13,16 +13,10 @@ actor MM_Player : playerPawn {
     player.JumpZ 9.797
     
     // Give Items/Weapons/Ammo
-    player.StartItem MM_Pistol
-    player.StartItem MM_9mmCartridges, 65
     player.StartItem MM_MeleeKey
     
     // Class stuff
     player.DisplayName "Marine"
-    
-    // Weapon Slots
-    player.WeaponSlot 2, MM_Pistol
-    player.WeaponSlot 3, MM_Shotgun, MM_SuperShotgun
     
     // Misc
     radius 16

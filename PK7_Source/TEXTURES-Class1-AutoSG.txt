@@ -1,0 +1,102 @@
+sprite 1SG0A0, 80, 63 {
+    offset -119, -105
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame1.png", 0, 0
+}
+
+sprite 1SG0B0, 82, 63 {
+    offset -119, -112
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame2.png", 0, 0
+}
+
+sprite 1SG0C0, 83, 63 {
+    offset -119, -114
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame3.png", 0, 0
+}
+
+sprite 1SG0D0, 80, 63 {
+    offset -119, -110
+    patch HAND1, -16, 7
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 14, 0
+}
+
+sprite 1SG0E0, 92, 63 {
+    offset -107, -110
+    patch HAND1, -21, 17
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 26, 0
+}
+
+sprite 1SG0F0, 125, 63 {
+    offset -74, -110
+    patch HAND1, -26, 45
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 59, 0
+}
+
+sprite 1SG0G0, 66, 63 {
+    offset -133, -110
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0H0, 66, 63 {
+    offset -131, -113
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0I0, 66, 63 {
+    offset -128, -119
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0J0, 66, 63 {
+    offset -130, -116
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0K0, 66, 63 {
+    offset -132, -112
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0L0, 66, 63 {
+    offset -136, -108
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0M0, 66, 63 {
+    offset -139, -107
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0N0, 66, 63 {
+    offset -135, -109
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame6.png", 0, 0
+}
+
+sprite 1SG0O0, 81, 63 {
+    offset -120, -110
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame4.png", 0, 0
+}
+
+sprite 1SG0P0, 82, 63 {
+    offset -120, -110
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame5.png", 0, 0
+}
+
+sprite 1SG0W0, 80, 63 {
+    offset -110, -115
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame1.png", 0, 0
+}
+
+sprite 1SG0X0, 80, 63 {
+    offset -98, -119
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame1.png", 0, 0
+}
+
+sprite 1SG0Y0, 80, 63 {
+    offset -72, -131
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame1.png", 0, 0
+}
+
+sprite 1SG0Z0, 80, 63 {
+    offset -50, -144
+    patch "graphics/Weapons/Class1/AutoShotgun/Frame1.png", 0, 0
+}

@@ -1,0 +1,5 @@
+// Auto Shotgun
+Weapons/Class1/AutoSG/Fire                      "sounds/Weapons/Class1/AutoSG/Fire.ogg"         // By NightmareMutant from GAMEBANANA. CC BY-NC-NC 4.0
+Weapons/Class1/AutoSG/Out                       "sounds/Weapons/Class1/AutoSG/Out.ogg"          // From Counter-Strike: Condition Zero.
+Weapons/Class1/AutoSG/In                        "sounds/Weapons/Class1/AutoSG/In.ogg"           // Ditto.
+Weapons/Class1/AutoSG/Pump                      "sounds/Weapons/Class1/AutoSG/Pump.ogg"         // Ditto.

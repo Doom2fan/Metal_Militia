@@ -69,7 +69,9 @@
     OB_VOODOO                       = "%o killed his doppelganger without considering the consequences.";
 
 // PvP
-    
+    // Class 1
+        OB_C1AUTOSG                     = "%o got a face-full of %k's hot lead";
+
     // Misc
         OB_SHRAPNEL                 = "%o was hit by a piece of shrapnel";
 

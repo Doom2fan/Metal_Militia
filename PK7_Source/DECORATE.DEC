@@ -18,25 +18,31 @@
 ** 38.4 Z mapunits = 1 meter
 */
 
-#INCLUDE "Decorate/Defaults.DEC"
+#include "Decorate/Defaults.DEC"
 
 // Effects
-#INCLUDE "Decorate/Effects/Smoke.DEC"
-#INCLUDE "Decorate/Effects/Casings.DEC"
-#INCLUDE "Decorate/Effects/Blood.DEC"
+#include "Decorate/Effects/Smoke.DEC"
+#include "Decorate/Effects/Casings.DEC"
+#include "Decorate/Effects/Blood.DEC"
 
 // Common stuff
-#INCLUDE "Decorate/Bullets.DEC"
+#include "Decorate/Bullets.DEC"
 
 // Monsters
 
 // Inventory
 
 // Player stuff
-#INCLUDE "Decorate/Player.DEC"
+#include "Decorate/Player.DEC"
+#include "Decorate/Classes/Class1.DEC"
 
 // Ammo
-#INCLUDE "Decorate/Inventory/Ammo.DEC"
+#include "Decorate/Inventory/Ammo.DEC"
 
 // Weapons
-#INCLUDE "Decorate/Base Weapon.DEC"
+#include "Decorate/Base Weapon.DEC"
+    // Class 1
+    //#include "Decorate/Weapons/Class1/Pistol/DECORATE.DEC"
+    //#include "Decorate/Weapons/Class1/Revolver/DECORATE.DEC"
+    #include "Decorate/Weapons/Class1/AutoShotgun/DECORATE.DEC"
+    //#include "Decorate/Weapons/Class1/Rifle/DECORATE.DEC"

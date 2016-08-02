@@ -1,0 +1,14 @@
+actor MM_Class1 : MM_BasePlayer {
+    // Give Items/Weapons/Ammo
+    player.StartItem MM_Pistol
+    player.StartItem MM_9mmCartridges, 65
+    player.StartItem MM_MeleeKey
+    // Weapons' in-mag ammo
+    player.StartItem MM_C1_AutoShotgun_Clip, 12
+    
+    // Class stuff
+    player.DisplayName "Class 1"
+    
+    // Weapon Slots
+    player.WeaponSlot 3, MM_C1_AutoShotgun
+}
