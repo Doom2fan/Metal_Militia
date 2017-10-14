@@ -1,7 +1,7 @@
 actor MM_C1_AutoShotgun_TacticalReload : boolean { }
 actor MM_C1_AutoShotgun_Clip : ammo {
-    inventory.MaxAmount 13
-    ammo.BackpackMaxAmount 13
+    inventory.MaxAmount 12
+    ammo.BackpackMaxAmount 12
     +ignoreSkill
 }
 
@@ -33,10 +33,9 @@ actor MM_C1_AutoShotgun : MM_BaseWeapon {
         TNT1 AAAA       0 A_FireCustomMissile ("MM_C1_AutoSGTracer2", fRandom [weaponSpread] (-1.5, 1.5), FALSE, 0, 0, 0, fRandom [weaponSpread] (-0.8, 0.8))
         1SG0 A          1 A_FireCustomMissile ("MM_C1_AutoSGTracer2", fRandom [weaponSpread] (-1.5, 1.5), TRUE,  0, 0, 0, fRandom [weaponSpread] (-0.8, 0.8))
 
-        1SG0 CCCBB 1
+        1SG0 BCCBB 1
         1SG0 A     4
-        1SG0 AA    1 A_WeaponReady (WRF_NoBob | WRF_DisableSwitch | WRF_NoSecondary)
-        1SG0 A     2
+        1SG0 AAAA  1 A_WeaponReady (WRF_NoBob | WRF_DisableSwitch | WRF_NoSecondary)
         1SG0 A     3 A_Refire
         Goto Ready2
     Flash:
@@ -49,12 +48,10 @@ actor MM_C1_AutoShotgun : MM_BaseWeapon {
         goto Ready2
     TrueReloadStart:
         TNT1 A 0 A_JumpIfInventory ("MM_C1_AutoShotgun_Clip", 1, 2)
-        TNT1 A 0 A_Jump (256, 2)
+        TNT1 A 0 A_Jump (256, "TrueReload")
         TNT1 A 0 A_GiveInventory ("MM_C1_AutoShotgun_TacticalReload", 1)
-        TNT1 A 0 A_GiveInventory ("MM_C1_AutoShotgun_Clip", 1)
-        TNT1 A 0 A_TakeInventory ("MM_Shells", 1)
     TrueReload:
-        TNT1 A 0 A_JumpIfInventory ("MM_C1_AutoShotgun_Clip", 13, "ReloadFinish")
+        TNT1 A 0 A_JumpIfInventory ("MM_C1_AutoShotgun_Clip", 12, "ReloadFinish")
         TNT1 A 0 A_JumpIfInventory ("MM_Shells", 1, 1)
         goto ReloadFinish
         TNT1 A 0 A_GiveInventory ("MM_C1_AutoShotgun_Clip", 1)

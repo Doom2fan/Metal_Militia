@@ -11,4 +11,5 @@ actor MM_Class1 : MM_BasePlayer {
     
     // Weapon Slots
     player.WeaponSlot 3, MM_C1_AutoShotgun
+    player.WeaponSlot 4, MM_C1_Rifle
 }

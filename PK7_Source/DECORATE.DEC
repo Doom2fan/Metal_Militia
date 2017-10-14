@@ -45,4 +45,4 @@
     //#include "Decorate/Weapons/Class1/Pistol/DECORATE.DEC"
     //#include "Decorate/Weapons/Class1/Revolver/DECORATE.DEC"
     #include "Decorate/Weapons/Class1/AutoShotgun/DECORATE.DEC"
-    //#include "Decorate/Weapons/Class1/Rifle/DECORATE.DEC"
+    #include "Decorate/Weapons/Class1/Rifle/DECORATE.DEC"

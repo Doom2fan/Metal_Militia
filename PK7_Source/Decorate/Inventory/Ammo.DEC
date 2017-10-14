@@ -13,6 +13,21 @@ actor MM_9mmCartridges : ammo replaces Clip {
     }
 }
 
+actor MM_RifleCartridges : ammo {
+    tag "$RIFLECARTRIDGES"
+    inventory.PickupMessage "$PICKUP_RIFLE"
+    inventory.Amount 25
+    inventory.MaxAmount 300
+    ammo.BackpackMaxAmount 600
+    inventory.Icon "CLP2A0"
+    inventory.PickupSound "misc/ammopickup"
+    states {
+    Spawn:
+        CLP2 A -1
+        stop
+    }
+}
+
 actor MM_Shells : ammo replaces Shell {
     tag "$SHELLS"
     inventory.PickupMessage "$PICKUP_SHELLS"
